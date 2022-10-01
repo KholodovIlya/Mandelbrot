@@ -3,13 +3,13 @@ const context = canvas.getContext("2d");
 let wx = 0; let wy = 0; let zoom = 3; let res = 1;
 
 
-function drawPoint(x, y, res, color) {
+async function drawPoint(x, y, res, color) {
   context.fillStyle = "rgb(" + color * 2.55 + "," + color * 2.55 + "," + color * 2.55 + ")";
   context.fillRect(x, y, res, res);
 }
 
 
-function draw() {
+async function draw() {
   if (res <= 0) res = 1;
 
   for (let x = 0; x < canvas.width / res; x++) {
