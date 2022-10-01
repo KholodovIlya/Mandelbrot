@@ -7,12 +7,14 @@
   </head>
 
   <body>
-    <input id="wx" type="number" placeholder="координата X" value="0">
-    <input id="wy" type="number" placeholder="координата Y" value="0">
-    <input id="zoom" type="number" placeholder="зум" value="0.5">
-    <input id="res" type="number" placeholder="разрешение" value="3">
-    <input type="button" class="button" value="repaint" onclick="repaint()">
-    <canvas class="canvas"></canvas>
+    <nav>
+      <input id="wx" type="number" placeholder="x"> <input id="wy" type="number" placeholder="y">
+      <input id="zoom" type="number" placeholder="zoom">
+      <input id="res" type="number" placeholder="resolution" value="1">
+      <input type="button" class="button" value="find" onclick="find()">
+    </nav>
+
+    <div class="aspect-ratio-box"><canvas class="canvas"></canvas></div>
     <script src="main.js"></script>
   </body>
 </html>
